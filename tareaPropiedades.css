@@ -1,0 +1,64 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,500,300italic,500italic,700italic,900,300);
+
+body {
+  font-family: Roboto;
+  background: #F0EFE9;
+  margin: 0;
+}
+header {
+  color: #FFF;
+  background: #e1985c;
+  display: flex;
+  justify-content: center;
+  height: 175px;
+  align-items: center;
+  border-radius: 15px;
+}
+header > div {
+  display: flex;
+  max-width: 768px;
+  justify-content: space-between;
+  width: 100%;
+}
+header > div span#tasksCounter {
+  font-size: 1.5em;
+}
+
+header > div div#tasksDate {
+  text-align: right;
+}
+header > div div#tasksDate span {
+  font-weight: 100;
+}
+main {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+main > section {
+  background: #ffffff;
+  border-radius: 20px;
+  max-width: 768px;
+  padding: 20px 0px;
+  width: 100%;
+}
+
+table {
+    background-color: #ffffff;
+    border-radius: 15px;
+    border: 1px solid #E1BD6B;
+}
+th{
+    background-color: #E1BD6B;
+    border-radius: 10px;
+    border-bottom: #E1BD6B;
+    color: #ffffff;
+}
+td{
+    border-top: 1px solid #E1BD6B;
+    border-width: 1px;
+}
+th, td{
+    padding: 25px;
+    text-align: left;
+}
