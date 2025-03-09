@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="S03T01.css">
+    <title>Tarea Semana 3</title>
+</head>
+<header>
+    <h1> Flexbox vs Grid</h1>
+</header>
+<body>
+    <table>
+        <tablehead>
+        <tr>
+            <th>Tipo de Dato</th>
+            <th>Flexbox(display:flex)</th>
+            <th>Grid (display:grid)</th>
+        </tr>
+        </tablehead>
+        <tablebody>
+        <tr>
+            <td class="columnHeader">Caracteristicas</td>
+            <td>
+                <ul>
+                    <li> Una dimensión
+                    </li>
+                    <li> Centrado en el contenido
+                    </li>
+                    <li> Aliación en filas y columnas              
+                    </li>
+                    <li> Mayor simplicidad.
+                    </li>
+                    <li> Configurable como Fila, Fila inversa, Columna,Columna inversa
+                    </li>    
+                </ul> 
+            </td>
+            <td>
+                <ul> 
+                    <li>Bidimensional
+                    </li>
+                    <li>Diseño más estructurado y preciso
+                    </li>
+                    <li>Permite definir tamaños de celdas específicas
+                    </li>
+                    <li>Alinea elementos en ambas direcciones con grid-template-areas, grid-template-columns y grid-template-rows.            
+                    </li>
+                    <li>Ideal para layouts de página completos   
+                    </li>
+                </ul>  
+            </td>
+
+        </tr>
+        <tr>
+            <td class="columnHeader">Principales Diferencias</td>
+            <td> 
+                <ul>
+                    <li> 
+                        Creado para diseños de una dimensión, en una fila o una columna
+                    </li>
+                    <li> 
+                        Diseño más simple y fácil de usar
+                    </li>
+                </ul>  
+        </td>
+            <td> 
+                <ul>
+                    <li>
+                        Pensado para el diseño bidimensional, en varias filas y columnas al mismo tiempo  
+                    </li>
+                </ul>
+            </td>     
+                    </tr>
+        <tr>
+            <td class="columnHeader">Similitudes</td>
+            <td>             
+                <ul>
+                    <li>
+                        Establecer primero el diseño del elemento padre : al diseñar un diseño flexible o de cuadrícula, el elemento padre es el que tiene el estilo exacto en cuestión. 
+                    </li>
+                </ul> 
+            </td>
+            <td>         
+                <ul>
+                    <li>
+                        Ambos son diseños adaptables : independientemente del diseño que decida utilizar para su aplicación, siempre que diseñe las propiedades correctamente, ambos tipos de diseño responden a diferentes tamaños de pantalla. 
+                    </li>
+                </ul> 
+            </td>
+        </tr>
+        <tr>
+            <td class="columnHeader">Casos de Uso</td>
+            <td>
+                <ul>
+                    <li>Barras de navegación                
+                    </li>
+                    <li>Centrado horizontal o vertical
+                    </li>
+                    <li>Espaciar los elementos de manera uniforme dentro de un contenedor               
+                    </li>
+                    <li>Contenido dinámico que puede tener que ajustarse o tener que ajustarse en tamaño
+                    </li>
+                    <li>
+                        Útil para menús de navegación, listas, tarjetas y botones alineados.
+                    </li>
+                </ul>
+                </td>
+            <td>
+                <ul>
+                    <li>Diseños de cuadrícula complejos o los elementos deben ir en filas y columnas.
+                    </li>
+                    <li>Diseños más adaptables, es decir  el diseño da forma al contenido, se adopta un enfoque que prioriza el diseño.
+                    </li>
+                    <li>Alineación precisa de elementos.               
+                    </li>
+                    <li>Cuando desee diseñar el diseño combinado de la página.
+                    </li> 
+                    <li>Para diseños de página completos.
+                    </li>  
+                </ul> 
+            </td>
+        </tr>
+        <tr>
+            <td class="columnHeader">Ejemplos</td>
+            <td>
+                <ul>
+                    <li>
+                        <code>
+                            div {class="flex-container"}
+                            div{1}
+                            div{2}
+                            div{3}
+                            .flex-container {
+                            display: flex;
+                            }
+                        </code>       
+                    </li>
+                </ul>        
+            </td>
+            <td>
+                <ul>
+                    <li>
+                        <code>
+                            .grid-container {
+                                display: grid;
+                                grid-template-areas:
+                                    "header header"
+                                    "sidebar main"
+                                    "footer footer";
+                                grid-template-columns: 200px 1fr;
+                                grid-template-rows: 60px 1fr 50px;
+                                gap: 10px;
+                                height: 100vh;
+                            }
+                            .header {
+                                grid-area: header;
+                                background: #333;
+                                color: white;
+                                text-align: center;
+                                padding: 15px;
+                            }
+                            .sidebar {
+                                grid-area: sidebar;
+                                background: #f4f4f4;
+                                padding: 15px;
+                            }
+                            .main-content {
+                                grid-area: main;
+                                background: #ddd;
+                                padding: 15px;
+                            }
+                            .footer {
+                                grid-area: footer;
+                                background: #333;
+                            }
+                        </code>     
+                    </li>
+                </ul>   
+            </td>        
+        </tr>
+        </tablebody>  
+    </table>
+
+
+
+<section class="headerTabla2">
+    <h1> Mejores prácticas de nombramiento de CSS</h1>
+</section>
+
+    <table class="tabla2">
+        <tablehead>
+        <tr>
+            <th class="th2">Nombre</th>
+            <th class="th2">Explicación</th>
+            <th class="th2">Ventajas</th>
+            <th class="th2">Desventajas</th>
+            <th class="th2">Ejemplos</th>
+        </tr>
+        </tablehead>
+        <tablebody>
+        <tr>
+            <td class="columnHeader2">lowerCamelCase</td>
+            <td>
+                <ul>
+                    <li> Se usa para definir clases con múltiples palabras sin espacios, donde la primera letra es minúscula y cada palabra siguiente empieza con mayúscula.
+                    </li>
+                </ul> 
+            </td>
+            <td>
+                <ul> 
+                    <li>Comúnmente usado en JavaScript y frameworks como React.
+                    </li>
+                    <li>
+                        Evita el uso de caracteres especiales, reduciendo errores en ciertas plataformas.
+                    </li>
+                    <li>Compatible con classList en JavaScript sin transformaciones adicionales.                   
+                    </li>
+                    </li>
+                </ul>  
+            </td>
+            <td>
+                <ul>
+                    <li> Menos legible en comparación con kebab-case.
+                    </li>
+                    <li> No es el estándar en HTML/CSS, lo que puede generar inconsistencias en equipos grandes.                    
+                    </li>
+                </ul> 
+            </td>
+            <td>
+                <ul>
+                    <li> .nombreClaseEjemplo {}
+                    </li>
+                </ul> 
+            </td>
+        </tr>
+        <tr>
+            <td class="columnHeader2">kebab-case
+
+            </td>
+            <td> 
+                <ul>
+                    <li> Se usa para definir clases en CSS separando las palabras con guiones.                                           
+                    </li>
+                </ul>  
+        </td>
+            <td> 
+                <ul>
+                    <li> Más legible y fácil de entender en HTML y CSS.
+                    </li>    
+                    <li>
+                        Facilita la búsqueda y mantenimiento del código.                    </li>
+                    <li>    
+                        Compatible con todos los navegadores y herramientas de CSS.
+                    </li>
+                    <li>Es el estándar en HTML y CSS, lo que mejora la compatibilidad.  
+                    </li>
+                </ul>
+            </td>  
+            <td> 
+                <ul>
+                    <li>
+                        No es directamente compatible con classList en JavaScript sin transformaciones.                    </li>
+                    <li>
+                        Puede volverse difícil de escribir si hay muchas palabras en la clase.                  
+                    </li>
+                </ul>
+            </td>  
+            <td> 
+                <ul>
+                    <li>
+                        .mi-clase-ejemplo {} 
+                    </li>
+                </ul>
+            </td>
+            </tr>
+        <tr>
+            <td class="columnHeader2">BEM (Block-Element-Modifier)
+            </td>
+            <td>             
+                <ul>
+                    <li>
+                        Se basa en bloques, elementos y modificadores para mejorar la legibilidad del CSS.
+                    </li>
+                </ul> 
+            </td>
+            <td>         
+                <ul>
+                    <li>
+                        Diseño adaptable.
+                    </li>
+                    <li>
+                        Organiza el código de forma clara.    
+                    </li>
+                    <li>
+                        Facilita la reutilización de componentes.    
+                    </li>
+                </ul> 
+            </td>
+            <td>         
+                <ul>
+                    <li>
+                        Puede generar nombres de clases largos y difíciles de manejar.                    
+                    </li>
+                    <li>
+                        Requiere disciplina en su aplicación.
+                    </li>
+                </ul> 
+            </td>
+            <td>         
+                <ul>
+                    <li>
+                        .bloque__elemento--modificador {}
+                    </li>
+                    <li>
+                        .boton__icono--grande {}
+                    </li>
+                </ul> 
+            </td>
+        </tr>
+        <tr>
+            <td class="columnHeader2">OOCSS (Object-oriented CSS) </td>
+            <td>
+                <ul>
+                    <li>Divide los estilos en estructuras reutilizables para mejorar la modularidad.             
+                    </li>
+                </ul>
+                </td>
+            <td>
+                <ul>
+                    <li>Fomenta la reutilización de estilos, reduciendo la duplicación de código.
+                    </li>
+                    <li>Mejora la separación entre estructura y apariencia.
+                    </li>
+                    <li>Facilita el mantenimiento al dividir estilos en componentes reutilizables.              
+                    </li> 
+                    <li>Reduce la carga de CSS al aprovechar componentes comunes.                    </li> 
+                </ul> 
+            </td>
+            <td>
+                <ul>
+                    <li>Puede ser difícil de entender al principio.
+                    </li>
+                    <li> No sigue una estructura estricta, lo que puede generar inconsistencias en proyectos grandes.
+                    </li>
+                </ul> 
+            </td>
+            <td>
+                <ul>
+                    <li>.card-title {}
+                    </li>
+                    <li>.card-content {}
+                    </li>
+                </ul> 
+            </td>
+        </tr>
+        <tr>
+            <td class="columnHeader2">ITCSS (Inverted Triangle CSS) </td>
+            <td>
+                <ul>
+                    <li>Organiza los estilos en capas, desde los más generales hasta los más específicos.              
+                    </li>
+                </ul>
+                </td>
+            <td>
+                <ul>
+                    <li>Mejora la organización del código en proyectos grandes.
+                    </li>
+                    <li>Reduce la sobrecarga de estilos innecesarios.
+                    </li>
+                    <li>Alineación precisa de elementos.               
+                    </li>
+                    <li>Evita problemas de especificidad en CSS.
+                    </li> 
+                    <li>Facilita la escalabilidad al mantener una estructura clara.
+                    </li>  
+                </ul> 
+            </td>
+            <td>
+                <ul>
+                    <li>Puede ser complejo de implementar en proyectos pequeños.
+                    </li>
+                    <li>Requiere una buena planificación previa.
+                    </li> 
+                </ul> 
+            </td>
+            <td>
+                <ul>
+                    <li>.layout-header {}
+                    </li>
+                    <li>.layout-footer {}
+                    </li>                
+                </ul> 
+            </td>
+        </tr>
+        <tr>
+            <td class="columnHeader2">Utility-First CSS (Ej. Tailwind CSS) </td>
+            <td>
+                <ul>
+                    <li>Usa clases utilitarias predefinidas para diseño rápido sin escribir CSS personalizado.                
+                    </li>
+                </ul>
+                </td>
+            <td>
+                <ul>
+                    <li>Permite desarrollar más rápido sin necesidad de escribir CSS personalizado.
+                    </li>
+                    <li>Facilita la creación de interfaces consistentes.
+                    </li>
+                    <li>Alineación precisa de elementos.               
+                    </li>
+                    <li>Elimina la necesidad de escribir archivos CSS grandes.
+                    </li> 
+                    <li>Evita la sobrecarga de estilos al usar solo lo necesario.
+                    </li>  
+                </ul> 
+            </td>
+            <td>
+                <ul>
+                    <li>No es tan flexible para personalizaciones avanzadas sin configuración adicional.
+                    </li>
+                    <li>Dependencia del framework para realizar cambios.
+                    </li>
+                    <li>Puede generar código HTML muy largo y difícil de leer.             
+                    </li>
+                </ul> 
+            </td>
+            <td>
+                <ul>
+                    <li>class="bg-blue-500 text-white px-4 py-2 rounded"
+                    </li> 
+                </ul> 
+            </td>
+        </tr>
+        <tr>
+            <td class="columnHeader2">SMACSS (Scalable and Modular Architecture for CSS)</td>
+            <td>
+                <ul>
+                    <li>Clasifica los estilos en categorías como Base, Layout, Module, State y Theme.                
+                    </li>
+                </ul>
+                </td>
+            <td>
+                <ul>
+                    <li>Facilita la escalabilidad de proyectos grandes.
+                    </li>
+                    <li>Organización clara del código en diferentes categorías.
+                    </li>
+                    <li>Reduce la probabilidad de conflictos entre estilos.             
+                    </li>
+                    <li>Cuando desee diseñar el diseño combinado de la página.
+                    </li> 
+                    <li>Fomenta el uso de estilos modulares y reutilizables.
+                    </li>  
+                </ul> 
+            </td>
+            <td>
+                <ul>
+                    <li>Requiere tiempo para aprender y aplicar correctamente.
+                    </li>
+                    <li>Puede agregar complejidad a proyectos pequeños.
+                    </li>
+                </ul> 
+            </td>
+            <td>
+                <ul>
+                    <li>.module-button {}
+                    </li>
+                    <li>.state-hidden {}
+                    </li>
+                </ul> 
+            </td>
+        </tr>
+        </tablebody>  
+    </table>
+
+</body>
+<br>
+<br>
+<br>    
+
+<footer>
+    <p> Elaborado por Mario Brenes Carnet: 2020426280</p>
+</footer>
+
+</html>
+
+
+
+
