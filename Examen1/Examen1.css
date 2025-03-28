@@ -1,18 +1,40 @@
 body{
-    background-color: #00000000;
-
+    background-color: #000000;
 }
 
+header segundo{
+    background-color: #555353;
+}
 .botones{
     display: grid;
     grid-template-columns: 1 1 1;
     grid-template-rows: 1 1 1 ;
 }
-
+.botones{
+    background-color: #7c7c7b;
+}
 
 .cuerpoCalculadora{
     width: 450px;
     display:flex;
     justify-content:center ;
     align-self: center;
+}
+
+
+.numeros {
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    height: 100vh;
+    background-color: #f0f0f0; 
+}
+
+.boton {
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: #ff9e1f;
+    color: white; 
+    border: none;
+    border-radius: 5px; 
 }
