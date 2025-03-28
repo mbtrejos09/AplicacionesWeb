@@ -1,0 +1,10 @@
+header h1 {
+    background-color: rgb(90, 230, 193);
+}
+.lista {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
