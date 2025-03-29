@@ -8,7 +8,7 @@
     margin: 0;
     padding: 0;
     min-height: 100vh;
-    background-image:linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url('https://s3-alpha-sig.figma.com/img/4c66/f3ba/ad0c8afb7ddebffaf765ab83948325cb?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=sX0EYr3M-Yp~frZ8RloqiyDG7RzsTW3RGy6sCAURNv2wBigd4Stc5EJ~8t~NTxUmQQjMjb0Cnc7kSXbR7-MCcXhibWTQRiDXalsiyN9YUnOUd7ZdD5FXDGokRXvQL1-XCyfaGaZQNl3faLLQKwr3T6AhFEUsTTt~zHfqT9SzWd23w601XpJwg4MUsuY4oDen55w~t93Y3FPUd9nEIxX58enNehWIOIVBowARgIkXoKVUur21pf4mADH1J7USMVsXkIo6jGsibhXlOfXvNlBPp0x2bOltZTxlrjSbUxRIB046TuxPIpwlTUVMe3dqbB5qKE1E6YIKDvvQc7EJctvJcg__');
+    background-image:linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('https://s3-alpha-sig.figma.com/img/4c66/f3ba/ad0c8afb7ddebffaf765ab83948325cb?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=sX0EYr3M-Yp~frZ8RloqiyDG7RzsTW3RGy6sCAURNv2wBigd4Stc5EJ~8t~NTxUmQQjMjb0Cnc7kSXbR7-MCcXhibWTQRiDXalsiyN9YUnOUd7ZdD5FXDGokRXvQL1-XCyfaGaZQNl3faLLQKwr3T6AhFEUsTTt~zHfqT9SzWd23w601XpJwg4MUsuY4oDen55w~t93Y3FPUd9nEIxX58enNehWIOIVBowARgIkXoKVUur21pf4mADH1J7USMVsXkIo6jGsibhXlOfXvNlBPp0x2bOltZTxlrjSbUxRIB046TuxPIpwlTUVMe3dqbB5qKE1E6YIKDvvQc7EJctvJcg__');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
