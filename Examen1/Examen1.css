@@ -1,22 +1,93 @@
-body{
-    background-color: #000000;
-}
+header {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+  }
 
-header segundo{
-    background-color: #555353;
+  nav.primero, nav.segundo {
+    color: white;
+    padding: 18px 22px;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 0%;
+    font-family: Inter;
+  }
+
+  nav.primero {
+    background-color: #000;
+    font-size: 13px;
+  }
+
+  nav.segundo {
+    background-color: #202020;
+    font-size: 14px;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-image: url('https://s3-alpha-sig.figma.com/img/4c66/f3ba/ad0c8afb7ddebffaf765ab83948325cb?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=sX0EYr3M-Yp~frZ8RloqiyDG7RzsTW3RGy6sCAURNv2wBigd4Stc5EJ~8t~NTxUmQQjMjb0Cnc7kSXbR7-MCcXhibWTQRiDXalsiyN9YUnOUd7ZdD5FXDGokRXvQL1-XCyfaGaZQNl3faLLQKwr3T6AhFEUsTTt~zHfqT9SzWd23w601XpJwg4MUsuY4oDen55w~t93Y3FPUd9nEIxX58enNehWIOIVBowARgIkXoKVUur21pf4mADH1J7USMVsXkIo6jGsibhXlOfXvNlBPp0x2bOltZTxlrjSbUxRIB046TuxPIpwlTUVMe3dqbB5qKE1E6YIKDvvQc7EJctvJcg__');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter:blur(2px);
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    z-index: -1;
+  }
+ 
+
+nav.primero{
+    background-color: #000000;
+    width: 1408;
+    height: 59;
+    gap: 5px;
+    padding-top: 18px;
+    padding-right: 22px;
+    padding-bottom: 18px;
+    padding-left: 22px;
+}
+nav.segundo{
+    background-color: #202020;
+    width: 1408;
+    height: 54;
+    gap: 10px;
+    padding-top: 12px;
+    padding-right: 23px;
+    padding-bottom: 12px;
+    padding-left: 23px;
 }
 .botones{
     display: grid;
-    grid-template-columns: 1 1 1;
-    grid-template-rows: 1 1 1 ;
+    grid-template-rows: repeat(4, 1fr);;
+    grid-template-columns: repeat(4, 1fr); 
+    align-content: center;
+    gap: 10px;
+    padding: 20px;
+    background-color: #5F625E;
+    border-radius: 10px;
 }
-.botones{
-    background-color: #7c7c7b;
+.teclas{
+    background-color: #5F625E;
+    width: 450px;
+    height: 636px;
+    border-radius: 10px;
+}
+boton.numeros{
+    background-color: #ffffff;
+    text-align: center;
+    color: #000000;
 }
 
 .cuerpoCalculadora{
+    margin-top: 0px;
     width: 450px;
     display:flex;
+    flex-direction: column;
     justify-content:center ;
     align-self: center;
 }
@@ -34,7 +105,53 @@ header segundo{
     margin: 5px;
     padding: 10px 20px;
     background-color: #ff9e1f;
-    color: white; 
+    color: #ffffff; 
     border: none;
     border-radius: 5px; 
+}
+
+
+.pantalla input {
+    color: #ffffff;
+    background-color: #4F5B49;
+    width: 100%;
+    padding: 15px;
+    font-size: 24px;
+    text-align: right;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+
+  .teclas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:5px;
+  }
+
+  .boton, .numero {
+    width: 85px;
+    height: 70px;
+    padding: 20px;
+    font-size: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+    font-weight: bolder;
+  }
+
+  .boton {
+    background-color: #ff9e1f;
+    color: #ffffff;
+  }
+
+  .numero {
+    background-color: #ffffff;
+    color: #000000;
+  }
+
+  @media (max-width: 500px){
+    .cuerpoCalculadora {
+      width: 90%;
+    }
 }
