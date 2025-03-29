@@ -3,7 +3,6 @@ header {
     position: relative;
     z-index: 1;
   }
-
   nav.primero, nav.segundo {
     color: white;
     padding: 18px 22px;
@@ -11,17 +10,30 @@ header {
     line-height: 100%;
     letter-spacing: 0%;
     font-family: Inter;
+    margin: 0;
+    border-radius: 0;
   }
-
-  nav.primero {
-    background-color: #000;
+  nav.primero{
+    background-color: #000000;
+    width: 1408;
+    height: 59;
+    gap: 5px;
+    padding-top: 18px;
+    padding-right: 22px;
+    padding-bottom: 18px;
+    padding-left: 22px;
     font-size: 13px;
-  }
-
-  nav.segundo {
+}
+nav.segundo{
     background-color: #202020;
     font-size: 14px;
-  }
+    width: 1408;
+    height: 54;
+    padding-top: 12px;
+    padding-right: 23px;
+    padding-bottom: 12px;
+    padding-left: 23px;
+}
   body {
     margin: 0;
     padding: 0;
@@ -39,119 +51,66 @@ header {
     background-color: rgba(255, 255, 255, 0.2);
     z-index: -1;
   }
- 
 
-nav.primero{
-    background-color: #000000;
-    width: 1408;
-    height: 59;
-    gap: 5px;
-    padding-top: 18px;
-    padding-right: 22px;
-    padding-bottom: 18px;
-    padding-left: 22px;
-}
-nav.segundo{
-    background-color: #202020;
-    width: 1408;
-    height: 54;
-    gap: 10px;
-    padding-top: 12px;
-    padding-right: 23px;
-    padding-bottom: 12px;
-    padding-left: 23px;
-}
-.botones{
-    display: grid;
-    grid-template-rows: repeat(4, 1fr);;
-    grid-template-columns: repeat(4, 1fr); 
-    align-content: center;
-    gap: 10px;
-    padding: 20px;
-    background-color: #5F625E;
-    border-radius: 10px;
-}
 .teclas{
     background-color: #5F625E;
     width: 450px;
     height: 636px;
-    border-radius: 10px;
+    border-radius: 0px 0px 10px 10px;
+    gap: 15px;
+    padding: 0 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
 }
-boton.numeros{
-    background-color: #ffffff;
-    text-align: center;
-    color: #000000;
-}
-
-.cuerpoCalculadora{
+.calculadora{
     margin-top: 0px;
     width: 450px;
+    padding: 20px;
     display:flex;
     flex-direction: column;
-    justify-content:center ;
+    justify-content:space-evenly ;
     align-self: center;
 }
 
-
-.numeros {
-    display: flex; 
-    justify-content: center;
-    align-items: center; 
-    height: 100vh;
-    background-color: #f0f0f0; 
-}
-
-.boton {
+.operador, .numero {
+    width: 85px;
+    height: 70px;
+    font-size: 30px;
+    border-radius: 10px;
+    font-weight: bolder;
+    box-shadow: 0px 4px 10px 3px #00000080;
+  }
+  .operador {
+    text-align: center;
+    color: #ffffff;
     margin: 5px;
     padding: 10px 20px;
-    background-color: #ff9e1f;
-    color: #ffffff; 
+    background-color: #F39C11;
     border: none;
     border-radius: 5px; 
 }
-
-
-.pantalla input {
-    color: #ffffff;
-    background-color: #4F5B49;
-    width: 100%;
-    padding: 15px;
-    font-size: 24px;
-    text-align: right;
-    border: none;
-    border-radius: 5px;
-    margin-bottom: 0px;
-    margin-top: 0px;
-  }
-
-  .teclas {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap:5px;
-  }
-
-  .boton, .numero {
-    width: 85px;
-    height: 70px;
-    padding: 20px;
-    font-size: 30px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
-    font-weight: bolder;
-  }
-
-  .boton {
-    background-color: #ff9e1f;
-    color: #ffffff;
-  }
-
   .numero {
     background-color: #ffffff;
     color: #000000;
   }
-
+#resultado {
+    color: #ffffff;
+    background-color: #4F5B49;
+    width: 100%;
+    padding: 15px 25px 15px 15px;
+    font-size: 40px;
+    text-align: right;
+    border: none;
+    border-radius: 5px 5px 0px 0px;
+    margin-bottom: 0px;
+    margin-top: 70px;
+  }
+  #resultado::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+  }
   @media (max-width: 500px){
-    .cuerpoCalculadora {
+    .calculadora {
       width: 90%;
     }
 }
